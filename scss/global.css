@@ -24,7 +24,7 @@
   }
 }
 
-nav ul, .accueil {
+nav ul, .accueil, .container-boxs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +248,102 @@ nav li a:hover::after {
   }
   .sous-titre {
     font-size: 18px;
+  }
+}
+
+.container-performances {
+  padding: 120px 20px 170px;
+  margin-bottom: 100px;
+  background: #000;
+  -webkit-clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 82%);
+          clip-path: polygon(0 0, 100% 17%, 100% 100%, 0 82%);
+  background-image: linear-gradient(45deg, rgba(254, 246, 210, 0.53) 0%, rgba(254, 246, 210, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 14.286%, rgba(221, 240, 216, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 28.572%, rgba(188, 233, 223, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 42.858%, rgba(156, 227, 229, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 57.144%, rgba(123, 220, 235, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 71.43%, rgba(90, 214, 242, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 85.716%, rgba(57, 207, 248, 0.53) 100.002%), linear-gradient(135deg, #f663c8 0%, #f663c8 12.5%, #df62c4 12.5%, #df62c4 25%, #c761c0 25%, #c761c0 37.5%, #b060bc 37.5%, #b060bc 50%, #985fb8 50%, #985fb8 62.5%, #815eb4 62.5%, #815eb4 75%, #695db0 75%, #695db0 87.5%, #525cac 87.5%, #525cac 100%);
+}
+
+.separation {
+  margin: 0 auto 70px;
+  height: 2px;
+  width: 300px;
+  border-radius: 3px;
+  background: #000;
+  border: none;
+}
+
+.container-boxs {
+  width: 100%;
+}
+
+.box {
+  margin: 0 50px;
+}
+
+.box p {
+  text-align: center;
+}
+
+.nombre-clients {
+  font-size: 85px;
+  padding-bottom: 10px;
+}
+
+.type-de-clients {
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.info-client {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .nombre-clients {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container-performances {
+    padding: 175px 20px 150px;
+  }
+  .container-boxs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box {
+    margin: 20px 0;
+  }
+  .separation {
+    margin: 0 auto 30px;
+    width: 30%;
+  }
+  .nombre-clients {
+    font-size: 80px;
+  }
+  .type-de-clients {
+    font-size: 25px;
+  }
+  .info-client {
+    width: 100%;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container-performances {
+    padding: 135px 20px 150px;
+  }
+  .nombre-clients {
+    font-size: 50px;
+  }
+  .type-de-clients {
+    font-size: 22px;
+  }
+  .info-client {
+    width: 100%;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=global.css.map */
