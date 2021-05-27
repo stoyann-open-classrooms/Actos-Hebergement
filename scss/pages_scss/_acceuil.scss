@@ -315,3 +315,77 @@ border: none;
         font-size: 20px;
     }
 }
+
+//-------------------- Section FAQ--------------------
+
+.container-faq{
+    width: 70%;
+    max-width: 900px;
+    min-width: 300px;
+    height: auto;
+    margin: 10px auto 150px;
+    @extend %flex-double-center;
+    flex-direction: column;
+}
+.questions{
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+
+}
+
+.panneau-visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.titre-question {
+    margin-left: 10px;
+    padding: 15px 5px ;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.panneau-visible img {
+    margin-right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.toggle-pannel{
+    padding: 0 15px;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.toggle-pannel h4 {
+    font-size: 22px ;
+    padding-bottom: 10px;
+    
+}
+
+.toggle-pannel p {
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
+@media screen and (max-width:750px) {
+    .container-faq{
+        width: 90%;
+
+    }
+
+    .titre-question{
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
